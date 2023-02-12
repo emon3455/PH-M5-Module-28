@@ -25,6 +25,12 @@ function setElementValueByID(elementID , elementValue){
 document.getElementById("square-btn").addEventListener("click" , function(){
 
     const inputNumber = getInputValueByID("input");
+
+    if(isNaN(inputNumber)){
+        alert("Please Enter a Valid Input");
+        return;
+    }
+    
     const sqr = inputNumber * inputNumber;
 
     setElementValueByID("square",sqr);
@@ -32,4 +38,15 @@ document.getElementById("square-btn").addEventListener("click" , function(){
 });
 
 // for cube
-document
+document.getElementById("cube-btn").addEventListener("click" , function(){
+
+    const input = getInputValueByID("input");
+    if(isNaN(input)){
+        alert("Please Enter a Valid Input");
+        return;
+    }
+    const cube = input * input * input;
+
+    setElementValueByID("cube",cube);
+
+});
