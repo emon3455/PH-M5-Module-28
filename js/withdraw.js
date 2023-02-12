@@ -17,10 +17,24 @@ document.getElementById("withdraw-btn").addEventListener("click" , function(){
     const withdrawDisplayAmount = document.getElementById("withdraw-amount");
     const withdrawAmountDis = parseFloat(withdrawDisplayAmount.innerText);
 
+
+    // get totallBalance:
+    const totallBalanceDisplay = document.getElementById("balance-amount");
+    const totallBalance = parseFloat(totallBalanceDisplay.innerText);
+
+    if(withdrawAmount>totallBalance){
+        alert("You Don't have that Much Money!!!");
+        return;
+    }
+    
     // withdraw amount totall:
     const TotallwithdrawAmount = withdrawAmount + withdrawAmountDis;
-
     // set withdraw amount:
     withdrawDisplayAmount.innerText = TotallwithdrawAmount;
+
+
+    // set Totall balance after withdraw:
+    const totallBalanceAfterWithdraw = totallBalance - withdrawAmount;
+    totallBalanceDisplay.innerText = totallBalanceAfterWithdraw;
 
 });
