@@ -23,7 +23,14 @@ document.getElementById("deposit-btn").addEventListener("click" , function(){
 
 
     // get balance amount:
-    
+    const displayBalanceAmount = document.getElementById("balance-amount");
+    const totallBalance = parseFloat(displayBalanceAmount.innerText);
+
+    // update totall amount Balance:
+    const updatedTotallBalance = depositAmount + totallBalance;
+
+    // set totall balance:
+    displayBalanceAmount.innerText = updatedTotallBalance;
 
 
 });
