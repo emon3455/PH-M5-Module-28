@@ -12,9 +12,60 @@
 </head>
 <body>
 
-    <header>
+    <header class="mt-2">
         <h1 class="text-4xl font-semibold text-center">Welcome To <span class="text-blue-700">functional</span> <span class="text-pink-400">Baper Bank!!!!</span> </h1>
     </header>
+
+    <!-- main section -->
+    <main class="container mx-auto">
+
+
+        <!-- dashboad -->
+        <section class="mt-8">
+
+            <div class="grid grid-cols-3 gap-10">
+
+                <div class="bg-pink-600 text-white p-4 rounded-xl">
+                    <h4 class="text-4xl">Deposit</h4>
+                    <p class="text-2xl">$ <span>00</span></p>
+                </div>
+
+                <div class="bg-violet-600 text-white p-4 rounded-xl">
+                    <h4 class="text-4xl">Withdraw</h4>
+                    <p class="text-2xl">$ <span>00</span></p>
+                </div>
+
+                <div class="bg-orange-500 text-white p-4 rounded-xl">
+                    <h4 class="text-4xl">Balance</h4>
+                    <p class="text-2xl">$ <span>1240</span></p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- input Operations -->
+        <section class="mt-5">
+
+            <div class="grid grid-cols-2 gap-10">
+
+                <div class="bg-sky-500 p-6 text-white rounded-xl space-y-2">
+                    <h4 class="text-4xl">Deposit Amount</h4>
+                    <input class="text-black block w-3/4 rounded p-2" type="text" placeholder="Amount You want to Deposit">
+                    <button class="bg-yellow-500 text-xl rounded-xl p-3 hover:bg-pink-500 transition-all">Deposit</button>
+                </div>
+
+                <div class="bg-violet-500 p-6 text-white rounded-xl space-y-2">
+                    <h4 class="text-4xl">Withdraw Amount</h4>
+                    <input class="text-black block w-3/4 rounded p-2" type="text" placeholder="Amount You want to Deposit">
+                    <button class="bg-yellow-500 text-xl rounded-xl p-3 hover:bg-pink-500 transition-all">Withdraw</button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
     
 </body>
 </html>
