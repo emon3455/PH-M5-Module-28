@@ -27,17 +27,17 @@
 
                 <div class="bg-pink-600 text-white p-4 rounded-xl">
                     <h4 class="text-4xl">Deposit</h4>
-                    <p class="text-2xl">$ <span>00</span></p>
+                    <p class="text-2xl">$<span id="deposit-amount">00</span></p>
                 </div>
 
                 <div class="bg-violet-600 text-white p-4 rounded-xl">
                     <h4 class="text-4xl">Withdraw</h4>
-                    <p class="text-2xl">$ <span>00</span></p>
+                    <p class="text-2xl">$<span>00</span></p>
                 </div>
 
                 <div class="bg-orange-500 text-white p-4 rounded-xl">
                     <h4 class="text-4xl">Balance</h4>
-                    <p class="text-2xl">$ <span>1240</span></p>
+                    <p class="text-2xl">$<span id="balance-amount">1240</span></p>
                 </div>
 
             </div>
@@ -49,16 +49,16 @@
 
             <div class="grid grid-cols-2 gap-10">
 
-                <div class="bg-sky-500 p-6 text-white rounded-xl space-y-2">
+                <div class="bg-sky-400 p-6 text-white rounded-xl space-y-2">
                     <h4 class="text-4xl">Deposit Amount</h4>
-                    <input class="text-black block w-3/4 rounded p-2" type="text" placeholder="Amount You want to Deposit">
-                    <button class="bg-yellow-500 text-xl rounded-xl p-3 hover:bg-pink-500 transition-all">Deposit</button>
+                    <input id="deposit-input" class="text-black block w-3/4 rounded p-2" type="text" placeholder="Amount You want to Deposit">
+                    <button id="deposit-btn" class="bg-yellow-500 text-xl rounded-xl p-3 hover:bg-pink-500 transition-all">Deposit</button>
                 </div>
 
-                <div class="bg-violet-500 p-6 text-white rounded-xl space-y-2">
+                <div class="bg-teal-500 p-6 text-white rounded-xl space-y-2">
                     <h4 class="text-4xl">Withdraw Amount</h4>
                     <input class="text-black block w-3/4 rounded p-2" type="text" placeholder="Amount You want to Deposit">
-                    <button class="bg-yellow-500 text-xl rounded-xl p-3 hover:bg-pink-500 transition-all">Withdraw</button>
+                    <button class="bg-pink-500 text-xl rounded-xl p-3 hover:bg-blue-500 transition-all">Withdraw</button>
                 </div>
 
             </div>
@@ -66,6 +66,9 @@
         </section>
 
     </main>
+
+
+    <script src="./js/deposit.js"></script>
     
 </body>
 </html>
